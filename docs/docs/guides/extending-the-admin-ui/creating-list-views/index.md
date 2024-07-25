@@ -139,6 +139,9 @@ export class ReviewListComponent extends TypedBaseListComponent<typeof getReview
             refreshListOnChanges: [this.filters.valueChanges, this.sorts.valueChanges],
         });
     }
+    ngOnInit() {
+        super.ngOnInit();
+    }
 }
 ```
 
